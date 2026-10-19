@@ -41,62 +41,78 @@ mirror:
       defaultChannel: stable-6.2
       channels:
       - name: stable-6.2
+    # ODF disconnected y-stream upgrades require both the current and prior
+    # release in the same mirrored catalog: https://access.redhat.com/solutions/7128211
     - name: odf-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odf-external-snapshotter-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odf-dependencies
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odf-csi-addons-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: ocs-client-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: cephcsi-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odf-prometheus-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odf-multicluster-orchestrator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: ocs-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: rook-ceph-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: mcg-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odr-hub-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: odr-cluster-operator
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
     - name: recipe
       defaultChannel: stable-4.20
       channels:
       - name: stable-4.20
+      - name: stable-4.19
   additionalImages:
   - name: registry.redhat.io/ubi8/ubi:latest
   - name: registry.redhat.io/openshift4/ztp-site-generate-rhel8:v4.20
