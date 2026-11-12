@@ -77,6 +77,10 @@ mirror:
       defaultChannel: stable-4.22
       channels:
       - name: stable-4.22
+    - name: ocs-tls-profiles
+      defaultChannel: stable-4.22
+      channels:
+      - name: stable-4.22
     - name: rook-ceph-operator
       defaultChannel: stable-4.22
       channels:
